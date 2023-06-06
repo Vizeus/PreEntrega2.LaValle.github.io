@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+#custom-body
+{
+    font-family: 'Kanit', sans-serif;
+    background-color: #735134;
+}
+
+#grilla 
+{
+    display: grid;
+    grid-template-areas:
+        ". header ."
+        "arteYDiseño idiomas marketing"
+        "arteYDiseño idiomas marketing"
+        "programación sonido videojuegos"
+        "programación sonido videojuegos";
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr; 
+    grid-template-columns: 3fr 3fr 3fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 60vh;
+    margin: 80px;	 
+ }
+
+ .celda 
+ {
+    background-color: #364959;
+    color: white;
+    text-align: center;
+ }
+
+ #titulo 
+ {
+    grid-area: header;
+ }
+
+ #arteYDiseño
+ {
+    grid-area: arteYDiseño;
+ }
+
+ #arteYDiseño section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ #idiomas
+ {
+    grid-area: idiomas;
+ }
+
+ #idiomas section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ #marketing
+ {
+    grid-area: marketing;
+ }
+
+ #marketing section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ #programación
+ {
+    grid-area: programación;
+ }
+
+ #programación section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ #sonido
+ {
+    grid-area: sonido;
+ }
+
+ #sonido section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ #videojuegos
+ {
+    grid-area: videojuegos;
+ }
+
+ #videojuegos section
+ {
+    font-weight: bold;
+    margin-bottom: 25px;
+ }
+
+ nav 
+ {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .bg-custom
+ {
+    background-color: #364959;
+ }
+
+ @media (min-width: 600px) and (max-width: 1400px)
+ {
+    #grilla 
+    {
+        display: grid;
+        grid-template-areas:
+            ". header header ."
+            "arteYDiseño arteYDiseño idiomas idiomas"
+            "marketing marketing programación programación"
+            "sonido sonido videojuegos videojuegos";
+        grid-template-rows: 1fr 2fr 2fr 2fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        height: 60vh;
+        margin: 50px;
+        font-size: 13px;	
+    }
+}
+
+@media (max-width: 599px)
+ {
+    #grilla 
+    {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "arteYDiseño"
+            "idiomas"
+            "marketing"
+            "programación"
+            "sonido"
+            "videojuegos";
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr; 
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        height: 60vh;
+        margin: 30px;
+        font-size: 11px;	
+    }
+}
+
+footer
+{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+    
+
+
+
