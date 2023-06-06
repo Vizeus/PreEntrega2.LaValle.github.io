@@ -233,6 +233,13 @@ footer
    grid-area: irAlExplorador;
  }
 
+ #irAlExplorador header
+ {
+   font-weight: bold;
+   font-size: 25px;
+   color: black; /* no me toma esto no entiendo por qué */
+ }
+
  #textoPrincipal
  {
    grid-area: textoPrincipal;
